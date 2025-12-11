@@ -43,3 +43,140 @@ body{
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
+
+#start-screen p{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.quiz-header{
+    margin-bottom: 2rem; /* 2 rem = 32px, mudar o espaçamento entre o título e as opções */
+}
+
+#question-text{
+    color: #000;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.quiz-info{
+    display: flex;
+    justify-content: space-between;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.answers-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.answer-btn{
+    background-color: #fff;
+    color: #333;
+    border: 2px solid #eadbc8;
+    border-radius: 10px;
+    padding: 1rem;
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.answer-btn:hover{
+    background-color: aquamarine;
+    border-color: antiquewhite;
+}
+
+.answer-btn.correct{
+    background-color: #4caf50;
+    color: #fff;
+    border-color: #4caf50;
+}
+
+.answer-btn.incorrect{
+    background-color:aquamarine;
+    color: #d83131;
+    border-color: antiquewhite;
+}
+
+.progress-bar{
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.progress{
+    height: 100%;
+    background-color: #013303;
+    width: 0%;
+    transition: width 0.3s ease;
+}
+
+/* RESULT SCREEN */
+
+#result-screen h1{
+    color: #eadbc8;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.result-info{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.result-info p{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+#result-message{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+}
+
+button{
+    background-color: #013303;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover{
+    background-color: #026002;
+}
+
+/* Responsive Design */
+@media (max-width: 600px){ /* para telas menores que 600px */
+    .container{
+        padding: 15px;
+    }
+
+    #question-text{
+        font-size: 1.2rem;
+    }
+
+    .answer-btn{
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    button{
+        padding: 12px 25px;
+        font-size: 0.9rem;
+    }
+}
