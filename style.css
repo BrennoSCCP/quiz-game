@@ -1,0 +1,45 @@
+/* Basic Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(245, 228, 182);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    background-color: #d6d5d68a;
+    padding: 25px;
+    border-radius: 1rem;
+    border: 7px solid #000;
+    box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 500px;
+    overflow: hidden;
+    position: relative
+}
+
+/* SCREENS */
+.screen{  /*esconder a parte do quiz que n está ativa*/
+    display: none;
+    padding: 2rem;
+    text-align: center;
+}
+
+.screen.active{ /* inicio do quiz */
+    display: block;
+}
+
+/* START SCREEN */
+
+#start-screen h1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
