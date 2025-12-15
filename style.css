@@ -98,9 +98,9 @@ body{
 }
 
 .answer-btn.incorrect{
-    background-color:aquamarine;
-    color: #d83131;
-    border-color: antiquewhite;
+    background-color:rgb(255, 28, 28);
+    color: #ffffff;
+    border-color: rgb(250, 55, 41);
 }
 
 .progress-bar{

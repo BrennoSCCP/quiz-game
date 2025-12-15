@@ -72,7 +72,7 @@ let answersDisabled = false;
 
 // Initialize Quiz
 totalQuestionsSpan.textContent = quizQuestions.length;
-maxScoreSpan.textContent = quizQuestions.length;
+maxScoreSpan.textContent = quizQuestions.length
 
 // Event Listeners
 startButton.addEventListener("click", startQuiz);
@@ -85,8 +85,8 @@ function startQuiz() {
    score = 0;
    scoreSpan.textContent = score;
 
-    startScreen.classList.remove("active");
-    quizScreen.classList.add("active");
+    startScreen.classList.remove("active"); // tirar a tela de inicio
+    quizScreen.classList.add("active"); // mostrar a tela do quiz
 
     showQuestion();
 }
@@ -109,7 +109,7 @@ function showQuestion() {
     currentQuestion.answers.forEach(answer => {
         const button = document.createElement("button");
         button.textContent = answer.text;
-        button.classList.add("answer-btn");
+        button.classList.add("answer-btn")
 
         button.dataset.correct = answer.correct;
 
@@ -133,7 +133,7 @@ function selectAnswer(event){
         if(button.dataset.correct === "true"){
             button.classList.add("correct");
         } else if (button === selectedButton){
-            button.classList.add("wrong");
+            button.classList.add("incorrect");
         }
 
 })
